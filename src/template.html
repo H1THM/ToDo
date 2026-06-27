@@ -1,9 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="createProject">
+      <input type="text" id="new-project-input" placeholder="New Project Name">
+      <button id="add-project-btn">Add Project</button>
+    </div>    
+    <div class="project-list-container">
+      <ul id="project-list"></ul>
+    </div>
+    <div class="settings">settings</div>
+  </div>
+  <div class="main">
+    <h2 id="active-project-title">Select a Project</h2>
+    <div class="createTodo" id="create-todo-container" style="display: none;">
+      <input type="text" id="new-todo-input" placeholder="New Todo Title">
+      <button id="add-todo-btn">Add Todo</button>
+    </div>
+    <div class="todos">
+      <ul id="todo-list"></ul>
+    </div>
+  </div>
+</body>
 </html>

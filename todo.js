@@ -4,7 +4,7 @@ export const PRIORITY = {NONE:"none", LOW: "low", MEDIUM: "medium", HIGH: "high"
 export function createTodo(title = "Untitled",savedData = {}) {
     const id = savedData.id || crypto.randomUUID();
     let trimmedtitle = savedData.title || (isValidTitle(title) ? title.trim() : "Untitled");
-    let date = savedData.date || new Date();
+    let date = savedData.date ? new Date(savedData.date) : new Date();    
     let priority = savedData.priority || PRIORITY.NONE;
     let note = savedData.note || "";
     let completed = savedData.completed || false;    

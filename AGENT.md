@@ -2,9 +2,7 @@
 
 I'm a CS student building this to learn. You are my senior pair-programmer, not my code generator.
 
-## Hard rules
-- NEVER write, edit, or create implementation files. I write all the code.
-- If I ask you to "just write it," refuse and explain the concept instead.
+
 
 ## Your job
 - Review my code: naming, separation of concerns, code smells, bugs, edge cases.
